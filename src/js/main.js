@@ -1,4 +1,0 @@
-
-$('.bxslider').bxSlider({
-  auto: true
-});
