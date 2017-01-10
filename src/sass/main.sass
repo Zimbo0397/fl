@@ -1,0 +1,327 @@
+@import _mixins
+
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+body
+	font: $font-stack
+	// &::-webkit-scrollbar
+	// 	height: 0
+	// 	width: 0
+
+
+
+//----------------------------------
+// TOP-line
+//----------------------------------
+
+.top-line
+	background: $main-green
+	.line-wrap
+		padding: 19px 0px
+		padding-left: 112px
+.brand-holder
+	position: absolute
+	top: 29px
+	left: 3px
+	&:after
+		content: ''
+		position: absolute
+		top: -9px
+		right: -22px
+		background: #fff
+		width: 2px
+		height: 48px
+
+	a
+		font-size: 1.7em
+		color: #fff
+
+
+.slider-holder
+	&.clear
+		.bx-prev,
+		.bx-next
+			display: none
+	.bx-pager
+		position: absolute
+		bottom: 20px
+	.bx-wrapper
+		box-shadow: none
+		border: none
+		.bx-pager-item
+			a
+				width: 14px
+				height: 14px
+				border-radius: 50%
+				background: rgba(255, 255, 255, 0.71)
+				&:hover,
+				&:active,
+				&:focus,
+				&.active
+					background: rgba(189, 180, 180, 0.65)
+	.image-holder
+		height: calc(100vh - 126px)
+.admin-panel
+	text-align: right
+	padding-top: 16px
+	// @media #{$media-lg-max}
+	// 	padding-top: 0
+	li
+		display: inline-block
+		margin-left: 45px
+		@media #{$media-lg-max}
+			margin-left: 20px
+		@media #{$media-lp-max}
+			margin-left: 20px
+		a
+			padding-left: 25px
+			display: inline-block
+			position: relative
+			line-height: 25px
+			font-size: 1.05em
+			@media #{$media-lp-max}
+				padding-left: 0
+			.image-holder
+				width: 20px
+				position: absolute
+				top: -2px
+				left: 0
+				@media #{$media-lg-max}
+					position: relative
+					top: 0
+			span
+				@media #{$media-lg-max}
+					display: none
+.nav-holder
+	position: relative
+	vertical-align: middle
+	padding-right: 30px
+	&:after
+		content: ""
+		position: absolute
+		top: 1px
+		right: 20px
+		height: 48px
+		width: 2px
+		background: #fff
+	.nav
+		margin-left: 6px
+		&.mobile
+			display: block
+			padding-right: 0px
+			max-height: 0
+			overflow: hidden
+			transition: max-height .2s
+			ul
+				margin-top: 20px
+			&.open
+				max-height: 1000px
+				overflow: initial
+				transition: max-height .2s
+			li
+				display: block
+				margin-bottom: 10px
+			@media #{$media-md-min}
+				display: none
+	li
+		display: inline-block
+		margin-right: 16px
+		a
+			display: inline-block
+			color: #fff
+			font-size: 1em
+			text-transform: uppercase
+			line-height: 3.3em
+.login-holder
+	padding-top: 11px
+	input
+		height: 28px
+		border-radius: 7px
+		background: #fff
+		padding: 3px
+		outline: none
+		margin-right: 10px
+		width: 146px
+		margin-right: 3px
+		text-align: center
+	.button
+		background: #02792f
+		width: 147px
+		margin-left: 2px
+		height: 28px
+		-webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.85)
+		-moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.85)
+		box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.85)
+.top-registration
+	padding-top: 11px
+	padding-left: 18px
+	span
+		vertical-align: middle
+		display: inline-block
+		margin-left: 2px
+		color: #fff
+	.button
+		height: 28px
+		-webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.85)
+		-moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.85)
+		box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.85)
+		display: inline-block
+		width: 146px
+		vertical-align: middle
+	.socials
+		li
+			margin-left: 5px
+			img
+				height: 28px
+				width: 28px
+
+
+.search-holder
+	position: absolute
+	top: -5px
+	right: 0
+	background: #fff
+	width: 335px
+	border-radius: 19px
+	padding-right: 20px
+	padding-left: 20px
+	@media #{$media-md-max}
+		display: none
+	&.mobile
+		position: relative
+		left: 0
+		right: auto
+		width: 180px
+		display: block
+		margin-top: 20px
+	@media #{$media-lg-max}
+		width: 280px
+	input
+		width: 100%
+		background: transparent
+		height: 33px
+		outline: none
+	a
+		position: absolute
+		width: 18px
+		height: 18px
+		top: 7px
+		right: 17px
+		display: inline-block
+		img
+			width: 100%
+
+// breadcrumbs
+.breadcrumbs-nav
+	padding: 16px 0
+.breadcrumbs
+	li
+		display: inline-block
+		margin-right: 10px
+		a
+			color: #bcbdbd
+		&:last-child
+			a
+				color: #000
+
+
+
+.content-nav
+	li
+		&:last-child
+			a
+				border: none
+		a
+			background: #222222
+			text-align: center
+			height: 126px
+			padding-top: 18px
+			border-right: 1px solid #979797
+			display: block
+			.image-holder
+				width: 62px
+				display: inline-block
+			span
+				display: block
+				font-size: 1.6em
+				margin-top: 11px
+			color: #fff
+
+.tabs
+	.text-container
+		&.active
+		height: calc(100vh - 126px)
+
+
+
+
+.main-top
+	padding-bottom: 128px
+.main-content-header
+	padding-top: 48px
+	text-align: center
+	h2
+		font-size: 4.4em
+		text-transform: uppercase
+		line-height: 1em
+	h3
+		font-size: 3.6em
+		font-weight: 400
+		line-height: 1.4em
+		margin-top: 5px
+
+.text-content
+	margin-top: 43px
+	.fl-description
+		background: url(../img/icons/text-back.png)
+		padding: 21px 25px 30px 68px
+		h4
+			text-align: center
+			text-transform: uppercase
+			color: $main-green
+			font-size: 1.8em
+			font-weight: 500
+			font-size: 1.8em
+			font-weight: 500
+			margin-bottom: 40px
+		p
+			font-family: "Raleway", sans-serif
+			font-weight: 500
+			font-size: 1.35em
+	.btns-holder
+		padding: 0px 70px 30px 68px
+		.button
+			width: 100%
+			margin-bottom: 20px
+			font-size: 3.3em
+			padding: 18px
+			border-radius: 23px
+
+
+.made-header
+	position: relative
+	margin-top: 50px
+.work-panel
+	position: absolute
+	max-width: 1100px
+	width: 100%
+	background: #e6e6e6
+	transform: translateX(-50%)
+	left: 50%
+	top: -150px
+	border-radius: 30px
+
+	li
+		text-align: center
+		&:first-child
+			text-align: left
+		&:last-child
+			text-align: right
+		.work-item
+			width: 173px
+			display: inline-block

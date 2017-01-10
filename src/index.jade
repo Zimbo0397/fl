@@ -1,0 +1,61 @@
+doctype html
+html(lang='ru')
+	head
+		title main
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+
+		include ./partials/top-line.jade
+
+		section.main-top(style="background-image: url(img/content/otdelka-i-remont.jpg)")
+			.container
+				.main-content-header
+					h2 Заголовок
+					h3  Под заголовок
+				.text-content
+					.inline-layout.col-2
+						.fl-description
+							h4 Фрилансер
+							p
+								|Фрилансер — свободный работник, частный специалист, который может одновременно выполнять заказы для разных клиентов. Термин фрилансер впервые употребляется Вальтером Скоттом в романе «Айвенго» для описания «средневекового наёмного воина».
+						.btns-holder
+							a(href="#").button.green Я мастер
+							a(href="#").button.yell Я Заказчик
+
+		section.how-made
+			.container
+				.made-header
+					.w-holder
+						.work-panel
+							ul.inline-layout.col-3
+								li
+									.work-item
+										.image-holder
+											img(src="img/icons/progs.png", alt="")
+										span Проэкты
+								li
+									.work-item
+										.image-holder
+											img(src="img/icons/flrs.png", alt="")
+										span Фрилансеры
+								li
+									.work-item
+										.image-holder
+											img(src="img/icons/customers.png", alt="")
+										span Заказчики
+
+						h3 Как это работает?
+
+
+				
+							
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

@@ -1,0 +1,25 @@
+{
+  "name": "FL  site",
+  "description": "FL",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [],
+  "authors": [
+    "V. Zbryzskiy"
+  ],
+  "license": "no license",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "jquery.browser": "latest",
+    "font-awesome": "~4.5.0"
+  }
+}
