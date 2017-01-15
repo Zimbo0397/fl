@@ -1,0 +1,86 @@
+doctype html
+html(lang='ru')
+	head
+		title register-customer
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+
+		include ./partials/top-line-no-socials.jade
+
+		section.register
+			.container
+				.register-form
+					h3 Настройки
+					.form-header
+						span Заполните информацию о себе
+					.form-body
+						form(action="")
+							.inline-layout
+								.left-side
+									.form-group
+										label(for="") Имя
+										input(type="text", placeholder='Роман')
+								.right-side
+									.form-group
+										label(for="") Фамилия
+										input(type="text", placeholder='Королев')
+								.form-group.full-w
+									label(for="") Телефон
+									input(type="text", placeholder='+380932596725')
+								.form-group.full-w
+									label(for="") Skype
+									input(type="text", placeholder='romankorolev343')
+								.form-group.full-w
+									label(for="") Электронная почта 
+									input(type="text", placeholder='rudy.fox343@gmail.com')
+								.left-side
+									.form-group
+										label(for="") Опыт работы (в годах) 
+										input(type="text", placeholder='3 года')
+									.form-group
+										label(for="") Страна
+										input(type="text", placeholder='Украина')
+									.form-group
+										label(for="") Город
+										input(type="text", placeholder='Луганск')
+								.right-side
+									.form-group
+										label(for="") Пол
+										input(type="text", placeholder='мужской')
+									.form-group
+										label(for="") Область
+										input(type="text", placeholder='Луганская')
+									.form-group
+										label(for="") Район
+										input(type="text", placeholder='Камбродский')
+								.form-group.full-w
+									label(for="") Информация о вас
+									textarea#rted(placeholder="Навыки, опыт, специализация....")
+								.add-photo
+									label(for="") Аватар
+									.image-holder
+									.fake-input
+										input(type="file")
+										span Выбрать изображение
+					.btn-holder
+						button.button.green Сохранить
+
+
+
+
+
+
+
+
+				
+							
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

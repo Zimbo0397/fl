@@ -1,0 +1,68 @@
+doctype html
+html(lang='ru')
+	head
+		title register-page-customer
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+
+		include ./partials/top-line.jade
+
+		section.register
+			.container
+				.for-customer
+					h3 Регистрация
+					.reg-btns-holder
+						ul.inline-layout
+							li
+								a(href="#").button Я фрилансер
+									span.mobile-hide , ищу работу
+							li
+								a(href="#").button.active Я заказчик
+									span.mobile-hide , ищу исполнителя
+					.reg-description
+						p
+							|Регистрируйся и зарабатывай с гарантией оплаты проектов от более чем 10 000 лучших заказчиков рунета, увеличивай свой рейтинг и доход на постоянном потоке заказов.
+					.block-btns
+						ul
+							li
+								a(href="#").button Email
+							li
+								a(href="#").button Пароль
+							li
+								a(href="#").button Пароль
+							li
+								a(href="#").button.active Регистрация
+					.socials
+							p
+								|Или вы можете зарегестрироваться через соц. сети
+							ul.inline-layout
+								li
+									a(href="#")
+										img(src="img/icons/vk.png", alt="")
+								li
+									a(href="#")
+										img(src="img/icons/fb.png", alt="")
+								li
+									a(href="#")
+										img(src="img/icons/odn.png", alt="")
+
+
+
+
+
+
+
+
+
+				
+							
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

@@ -1,0 +1,58 @@
+doctype html
+html(lang='ru')
+	head
+		title set-budget
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+
+		include ./partials/top-line-personal.jade
+
+		section.register
+			.container
+				.register-form.add-p
+					form(action="")
+						.form-header.center
+							span Кратко опишите проект, чтобы на него
+								br
+								b откликнулось больше фрилансеров
+						.form-body
+							.budget
+								h4 Установите бюджет
+								form(action="")
+									.budget-form
+										.form-group
+											input(type="text", placeholder="0")
+											input(type="text", placeholder="грн.")
+											input(type="text", placeholder="За проект")
+									.radio.form-group
+										input(type="radio", id="radio")
+										label(for="radio")
+										span По договоренности
+
+
+
+						
+
+						.btn-holder
+							button.button.orng.budget-btn Далее
+						
+
+
+
+
+
+
+
+
+				
+							
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

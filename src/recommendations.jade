@@ -1,0 +1,147 @@
+doctype html
+html(lang='ru')
+	head
+		title recommendations
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+
+		include ./partials/top-line-mon.jade
+
+		section.recom-search
+			.container
+				.search-holder
+					form(action="")
+						.button Добавить заказ
+						.search
+							input(type="text", placeholder="Найти заказ")
+		section.recomended
+			.container
+				.inline-layout
+					.aside-panel
+						.filters-holder
+							h4 Фильтр заказов
+							.filters-list
+								ul
+									li.first-lv
+										a(href="") Специализации
+										.content-inner
+											ul
+												li.sec-lv
+													.radio.form-group
+														input(type="radio", value='1', id="radio")
+														label(for="radio")
+														span Специализация 1
+												li.sec-lv
+													.radio.form-group
+														input(type="radio", value='2', id="radio1")
+														label(for="radio1")
+														span Специализация 2
+												li.sec-lv
+													.radio.form-group
+														input(type="radio", value='3', id="radio2")
+														label(for="radio2")
+														span Специализация 3
+												li.sec-lv
+													.radio.form-group
+														input(type="radio", value='4', id="radio3")
+														label(for="radio3")
+														span Специализация 4
+												li.sec-lv
+													.radio.form-group
+														input(type="radio", value='4', id="radio4")
+														label(for="radio4")
+														span Специализация 5
+									li.first-lv
+										a(href="#") Регион
+										.content-inner
+											select#df(name="")
+												option(value="1") Выберите регион
+												option(value="1") Одесса
+												option(value="1") Киев
+												option(value="1") Луганск
+												option(value="1") Полтава
+									li.first-lv
+										a(href="") Цена
+										.content-inner
+											label(for="amount") Цена от и до: 
+											input(type="text", id="amount", readonly)
+											.slider-holder
+												#slider-range
+
+							a(href="#")#clear-filters Очистить фильр
+					.recom-content
+						h3 Рекомендованые заказы
+
+						.recom-list
+							.recom-item
+								h5  Требуються строители
+									span.price 70$
+								p.days 8 дней назад
+								.text-holder
+									p
+										| Для работы на различных объектах требуются бетонщики, кровельщики, штукатуры, плиточники, маляра чистовой отделки, столяра, сантехники, электрики, установщики окон и сварщики.
+								.bott-panell
+									.region Ильичевск, Одесская область
+									.btn Ответить на заказ
+						.recom-list
+							.recom-item
+								h5  Требуються строители
+									span.price 70$
+								p.days 8 дней назад
+								.text-holder
+									p
+										| Для работы на различных объектах требуются бетонщики, кровельщики, штукатуры, плиточники, маляра чистовой отделки, столяра, сантехники, электрики, установщики окон и сварщики.
+								.bott-panell
+									.region Ильичевск, Одесская область
+									.btn Ответить на заказ
+						.recom-list
+							.recom-item
+								h5  Требуються строители
+									span.price 70$
+								p.days 8 дней назад
+								.text-holder
+									p
+										| Для работы на различных объектах требуются бетонщики, кровельщики, штукатуры, плиточники, маляра чистовой отделки, столяра, сантехники, электрики, установщики окон и сварщики.
+								.bott-panell
+									.region Ильичевск, Одесская область
+									.btn Ответить на заказ
+
+						.pagination
+							ul.inline-layout
+								li
+									a(href="#") Prev
+								li
+									a(href="#") 1
+								li
+									a.active(href="#") 2
+								li
+									a(href="#") 3
+								li
+									a(href="#") 4
+								li
+									a(href="#") 5
+								li
+									a.disable(href="#") ...
+								li
+									a(href="#") Next
+
+
+
+
+
+
+
+
+
+				
+							
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

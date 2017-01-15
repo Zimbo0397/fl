@@ -1,0 +1,139 @@
+doctype html
+html(lang='ru')
+	head
+		title personal-area
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+
+		include ./partials/top-line-mon.jade
+
+		
+
+		section.gen-information
+			.container
+				.inform-container.inline-layout
+					.about
+						.image-holder
+							img(src="img/icons/photo.png", alt="")
+						h4 Роман Королев
+						p г. Луганск
+						p Тел. 0664109791
+						p E-mail-rudy.fox343@gmail.com
+						p Skype-romankorolev343
+					.user-specialization
+						h4 Раздел и специализация
+						p.specia Разработка сайтов
+							span Дизайн сайтов
+						p На сайте: 8409-й
+						p
+							|Отзывы:
+							a(href="#").green +2
+							| / 0 / 
+							a(href="#").red -0
+					.age
+						h4 Возраст и опыт
+						p Пол: мужской
+						p Опыт: 1 год
+						p На сайте: меньше месяца
+						p Заходил: сейчас на сайте
+
+
+		section.inform-tabs
+			.container
+				.tabs-holder
+					ul
+						li
+							a.active(href="#", data-tab="3") Портфолио
+						li
+							a(href="#", data-tab="2") Отзывы
+						li
+							a(href="#", data-tab="3") Информация
+						li
+							a(href="#", data-tab="4") Настройки
+				.tabs-content
+					.tab-item#tab-2
+						.comments
+							h3 2 отзыва от работодателей за всё время
+							.comments-item
+								.image-holder
+									img(src="img/icons/add-photo-bg.png", alt="")
+								h5 Булат Райский 
+									span.name [Bulat2013]
+								p
+									|Хороший дизайнер.  всем рекомендую
+								.date  21.03.2016 в 20:17
+							.comments-item
+								.image-holder
+									img(src="img/icons/add-photo-bg.png", alt="")
+								h5 
+									span.name [igorbizi1]
+								p
+									|работы выполнил отлично, всегда был на связи, внес все необходимые правки, работой в целом доволен, рекомендую!!
+								.date  21.03.2016 в 20:17
+					.tab-item#tab-4
+						.skils
+							h4 Посещаемость:
+							ul
+								li Навык 1
+								li Навык 1
+								li Навык 1
+								li Навык 1
+								li Навык 1
+								li Навык 1
+								li Навык 1
+								li Навык 1
+								li Навык 1 
+								li Навык 1
+					.tab-item.open#tab-3
+						.portfolio
+							.port-navogation
+								.inline-layout.col-2
+									.left
+										a(href="#") Предидущая работа
+									.right
+										a(href="#") Следующая работа
+							.portfolio-content
+								h3 Ремонт квартиры (1 ком)
+								p.price 20000грн 2 недели
+								.text-container
+									p
+										|Изготовление и монтаж металлоконструкций, сендвич-панелей,профнастила. Устройство фундаментов,отопления, электромонтаж, отделочные работы ангаров,складов ,быстровозводимых зданий любого назначения. Гарантируем качество и сроки выполненных работ. Работа по всей Украине
+								.galery
+									.image-holder
+										img(src="img/content/gal-1.png", alt="")
+									.image-holder
+										img(src="img/content/gal-1.png", alt="")
+									.social-holder
+										ul.inline-layout
+											li
+												a(href="#")
+													img(src="img/icons/vk.png", alt="")
+											li
+												a(href="#")
+													img(src="img/icons/fb.png", alt="")
+											li
+												a(href="#")
+													img(src="img/icons/odn.png", alt="")
+
+
+
+
+
+
+
+
+
+
+
+				
+							
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

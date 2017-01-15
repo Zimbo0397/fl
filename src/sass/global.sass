@@ -101,6 +101,8 @@ button, input, select, textarea
 		background: #f48420
 	&.yell
 		background: #ef9c00
+	&.red
+		background: #df0024
 
 
 .btns
@@ -259,22 +261,22 @@ input
 	&:not(:checked) + label:before, &:checked + label:before
 		//background: #eee
 		border-radius: 50%
-		border: 2px solid #000
+		border: 2px solid #9a9a9a
 		content: ''
-		left: 0
-		top: 2px
+		left: -1px
+		top: -3px
 		position: absolute
-		width: 18px
-		height: 18px
+		width: 19px
+		height: 19px
 	&:not(:checked) + label:after, &:checked + label:after
 		content: ''
-		background-color: #000
+		background-color: #ccc
 		border-radius: 50%
 		position: absolute
-		top: 7px
-		left: 5px
-		width: 12px
-		height: 12px
+		top: 4px
+		left: 6px
+		width: 9px
+		height: 9px
 		transition: all .2s
 	&:not(:checked) + label:after
 		opacity: 0
@@ -335,6 +337,8 @@ input
 	margin: 0 auto
 	max-width: 1200px
 	position: relative
+	@media #{$media-ds-max}
+		max-width: 768px
 	@media #{$media-lg-max}
 		width: 100%
 		padding: 0 20px
